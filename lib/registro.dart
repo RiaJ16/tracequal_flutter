@@ -27,6 +27,14 @@ class Registro extends StatelessWidget{
     );
   }
 
+  static final username = TextEditingController();
+  static final nombre = TextEditingController();
+  static final apepat = TextEditingController();
+  static final apemat = TextEditingController();
+  static final email = TextEditingController();
+  static final password = TextEditingController();
+  static final password2 = TextEditingController();
+
   static final ButtonStyle style =
   ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
 
@@ -105,6 +113,7 @@ class Registro extends StatelessWidget{
             filled: true,
             fillColor: Colors.white,
           ),
+          controller: username,
         )
     );
   }
@@ -119,6 +128,7 @@ class Registro extends StatelessWidget{
             filled: true,
             fillColor: Colors.white,
           ),
+          controller: nombre,
         )
     );
   }
@@ -133,6 +143,7 @@ class Registro extends StatelessWidget{
             filled: true,
             fillColor: Colors.white,
           ),
+          controller: apepat,
         )
     );
   }
@@ -147,6 +158,7 @@ class Registro extends StatelessWidget{
             filled: true,
             fillColor: Colors.white,
           ),
+          controller: apemat,
         )
     );
   }
@@ -161,6 +173,7 @@ class Registro extends StatelessWidget{
             filled: true,
             fillColor: Colors.white,
           ),
+          controller: email,
         )
     );
   }
@@ -178,6 +191,7 @@ class Registro extends StatelessWidget{
           obscureText: true,
           enableSuggestions: false,
           autocorrect: false,
+          controller: password,
         )
     );
   }
@@ -195,6 +209,7 @@ class Registro extends StatelessWidget{
           obscureText: true,
           enableSuggestions: false,
           autocorrect: false,
+          controller: password2,
         )
     );
   }

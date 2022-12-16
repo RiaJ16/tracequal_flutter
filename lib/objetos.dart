@@ -122,3 +122,35 @@ class Progreso {
   }
 
 }
+
+class UsuarioNuevo{
+  late String id;
+  late String username;
+  late String nombre;
+  late String apepat;
+  late String apemat;
+  late String email;
+  late String password;
+
+  UsuarioNuevo({
+    required this.id,
+    required this.username,
+    required this.nombre,
+    required this.apepat,
+    required this.apemat,
+    required this.email,
+    required this.password,
+  });
+
+  Map<String, dynamic> toJson(){
+    return {
+      "username": username,
+      "nombre": nombre,
+      "apepat": apepat,
+      "apemat": apemat,
+      "email": email,
+      "password": password,
+    };
+  }
+
+}

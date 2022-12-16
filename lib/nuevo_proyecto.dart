@@ -62,6 +62,7 @@ class NuevoProyecto extends StatelessWidget{
                     print(proyecto.toJson());
                     var api = ApiClient();
                     api.nuevoProyecto(proyecto, userId);
+                    Navigator.pop(context, true);
                   },
                   style: style,
                   child: const Text("Aceptar"),
